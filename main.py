@@ -20,7 +20,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Токен бота (получить у @BotFather)
-BOT_TOKEN = ""
+BOT_TOKEN = "8045172167:AAGfNM2GOwD4H5NQp1Zkn5hwyO-QRVfcH7k"
 
 
 # Состояния пользователя
@@ -285,7 +285,7 @@ async def full_menu_handler(callback: CallbackQuery, state: FSMContext):
 @router.callback_query(F.data == "unlink_card_confirm")
 async def unlink_card_confirm_handler(callback: CallbackQuery, state: FSMContext):
     text = (
-        "\ud83d\udd10 Уверены, что хотите отвязать карту?\n\n"
+        "🔐 Уверены, что хотите отвязать карту?\n\n"
         "Мы не храним данные карты - используем только защищённый токен платёжной системы.\n"
         "Он нужен только для автоматического продления подписки, без вашего участия\n\n"
         "Если вы отвяжете карту:\n"
